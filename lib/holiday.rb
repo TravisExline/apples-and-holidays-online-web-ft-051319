@@ -31,7 +31,9 @@ end
 def add_supply_to_memorial_day(holiday_hash, supply)
   # again, holiday_hash is the same as the ones above
   # add the second argument to the memorial day array
-
+  holiday_hash[:spring][:memorial_day] << supply
+  #accessed whte spring key of the hooliday has, and then the memorial_day key of the spring hash,
+  #and shoveled in the new supply into the value, which is an array of strings of supplies
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
@@ -61,10 +63,3 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
 
 end
-
-
-
-
-
-
-
